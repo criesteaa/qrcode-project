@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h2>Generate Your QR Code</h2>
+      <div class="form-container">
+        <input type="text" id="qr-code-value" placeholder="Enter text or URL">
+        <button id="generate-btn">Generate</button>
+      </div>
+      <div class="qr-code-container">
+        <img id="qr-code-image" alt="QR Code">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Athena's QR Code Generator. All Rights Reserved.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

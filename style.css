@@ -1,0 +1,126 @@
+/* General body styling */
+body {
+    background: linear-gradient(135deg, #ff7a18, #af002d, #319197); 
+    font-family: 'Courier New', Courier, monospace; /* Corrected font-family */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes full height */
+    margin: 0;
+    padding-bottom: 80px; /* Space for the footer */
+    position: relative; /* Allow footer to be fixed at the bottom */
+  }
+  
+  /* Wrapper for positioning */
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ensures wrapper expands to fill space */
+    padding: 20px;
+  }
+  
+  /* Card container */
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Header Styling */
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  /* Input field */
+  input[type="text"] {
+    padding: 12px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #FF7A18;
+  }
+  
+  /* Button */
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #FF7A18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #f55e00;
+    transform: scale(1.05);
+  }
+  
+  /* QR Code Image container */
+  .qr-code-container {
+    margin-top: 20px;
+  }
+  
+
+
+  /* QR Code Image container */
+.qr-code-container {
+    margin-top: 20px;
+    border: 5px solid #FF7A18; /* Outline border for the box */
+    border-radius: 12px; /* Optional rounded corners */
+    padding: 10px; /* Space between the border and the QR code image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional shadow for the box */
+  }
+  
+  #qr-code-image {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    display: block; /* To remove any extra spacing around the image */
+    border-radius: 10px; /* Rounded corners for the QR code image */
+  }
+  
+  
+  /* Footer Styling */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff781805;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
